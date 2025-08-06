@@ -1,0 +1,1279 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Martel Sans", sans-serif;
+}
+
+body {
+    background-color: black;
+    font-family: "Martel Sans", sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+@media (min-width:1925px) {
+    body {
+        background-color: black;
+    }
+}
+
+.main {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/a927b1ee-784d-494a-aa80-cf7a062d2523/web/PK-en-20250714-TRIFECTA-perspective_3ea31bb5-14e1-41fe-997f-52b7ec8f28e4_large.jpg);
+    /* background-position: center center; */
+    background-repeat: no-repeat;
+    background-size: max(1850px, 100vw);
+    height: 100vh;
+    position: relative;
+}
+
+
+@media(min-width:1280px) {
+    .main {
+        background-position: center center;
+    }
+}
+
+@media(min-width:600px) {
+    .main {
+        background-position: center center;
+    }
+}
+
+@media (min-width:1925px) {
+    .main {
+        border: 2px solid red;
+        box-shadow: 2px -2px 20px 0px red;
+        margin: 20px;
+    }
+}
+
+.main .box {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* navigation bar code */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 80vw;
+    height: 62px;
+    position: relative;
+    z-index: 2;
+}
+
+nav img {
+    width: 150px;
+    margin-top: 20px;
+}
+
+nav button {
+    padding: 7px 13px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+nav button:hover {
+    background-color: #e50914;
+}
+
+/* navigation bar code ends here */
+
+
+/* heading code starts here */
+.heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    padding: 0 20px;
+    width: 90%;
+    max-width: 800px;
+}
+
+.big {
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 70px;
+    display: block;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .big {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+.medium {
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+   .medium {
+        font-size: 18px;
+    }
+}
+
+.small {
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .small {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media(max-width:320px){
+    .small{
+        margin-bottom: 20px;
+    }
+}
+
+/* heading code ends here */
+
+
+/* Buttons code starts here*/
+.entry {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+.entry {
+    margin-top: 12px;
+}
+
+input[type="text"] {
+    padding: 12px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 300px;
+    max-width: 90%;
+}
+
+.entry button {
+    padding: 12px 25px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.entry button:hover {
+    background-color: #e50914;
+}
+
+@media (max-width: 768px) {
+    .entry {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .entry input,
+    .entry button {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .entry {
+        margin-top: 10px;
+    }
+}
+
+@media(max-width:4896px) {
+    .entry button {
+        margin-left: 10px;
+    }
+}
+
+@media(max-width:715px) {
+    .entry button {
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+}
+
+/* buttons code ends here */
+
+
+/* curve line code starts here */
+
+@media (min-width:1925px) {
+    .big-box {
+        top: -85px;
+        height: 11.25rem;
+    }
+}
+
+.big-box {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    position: relative;
+    top: -25px;
+    height: 4rem;
+    z-index: 1;
+    position: relative;
+    top: -21px;
+}
+
+
+@media (min-width:1925px) {
+    .big-box {
+        position: relative;
+        top: -63px;
+    }
+
+}
+
+.medium-box {
+    box-sizing: border-box;
+}
+
+
+.small-box {
+    box-sizing: border-box;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border: solid .25rem transparent;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    border-bottom: none;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    background-clip: padding-box;
+}
+
+
+.small-box:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin-top: -.25rem;
+    border-radius: inherit;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%,
+            rgba(184, 40, 105, 1), rgba(229, 9, 20, 1),
+            rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+}
+
+.small-box {
+    width: 200%;
+    left: -50%;
+}
+
+@media (min-width: 600px) {
+    .small-box {
+        width: 180%;
+        left: -40%;
+    }
+}
+
+@media (min-width: 960px) {
+    .small-box {
+        width: 150%;
+        left: -25%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .small-box {
+        width: 130%;
+        left: -15%;
+    }
+}
+
+/* curve line code ends here */
+
+
+/* Trending Now code starts here */
+.sepration {
+    margin: 0;
+    padding: 0 30px;
+    width: 100vw;
+    height: 5vh;
+    min-height: 10vh;
+    background-color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    top: -30px;
+
+}
+
+@media (min-width:1925px) {
+    .sepration {
+        position: relative;
+        top: -65px;
+        z-index: 1;
+    }
+
+}
+
+.trending {
+    font-weight: 700;
+    font-size: 24px;
+    font-family: "Martel Sans", sans-serif;
+    align-items: start;
+    width: 120vw;
+    height: 5vh;
+    margin-left: 8%;
+}
+
+/* Trending Now code ends here */
+
+
+/* movies section css code Start here */
+.flex {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+@media (min-width:1925px) {
+    .flex {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media (max-width:959px) {
+    .flex {
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+}
+
+@media (max-width:786px) {
+    .flex {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width:600px) {
+    .flex {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.movie-container {
+    margin-top: 12px;
+    background-color: black;
+    position: relative;
+    top: -63px;
+}
+
+/* .movie-container  media queries start */
+
+@media (min-width:1920px) {
+    .movie-container {
+        margin-top: 24px;
+    }
+}
+
+@media (min-width:960px) {
+    .movie-container {
+        margin-top: 16px;
+    }
+}
+
+/* .movie-container  media queries end*/
+.movie-container1 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.movie-container2 {
+    border-radius: 8px;
+    width: 100%;
+    overflow-x: auto;
+    /* -----> use only if you want to hide the overflowed part of the container */
+
+}
+
+.movie-container3 {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-x: scroll;
+    overflow-y: visible;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    /* check it again */
+    scroll-margin-inline-start: 40px;
+
+}
+
+@media (min-width:2140px) {
+    .movie-container3 {
+        justify-content: center;
+    }
+}
+
+ul {
+    margin-block-start: 16px;
+    margin-block-end: 16px;
+    padding-inline-start: 40px;
+}
+
+.movie-container4 {
+    display: flex;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    list-style: none;
+    scroll-margin-inline-start: 36.8px;
+    padding: 4.8px 10px;
+}
+
+/* .movie-container 4 media queries starts here*/
+
+@media (min-width:1920px) {
+    .movie-container4 {
+        padding: 8.8px 22px;
+    }
+}
+
+@media (min-width:1280px) {
+    .movie-container4 {
+        scroll-margin-inline-start: 44px;
+        padding: 8px 22px;
+    }
+}
+
+@media (min-width:960px) {
+    .movie-container4 {
+        padding: 6.4px 22px;
+    }
+}
+
+@media (min-width:600px) {
+    .movie-container4 {
+        scroll-margin-inline-start: 38.4px;
+    }
+}
+
+/* .movie-container 4 media queries ends here */
+
+.movie-container5 {
+    position: relative;
+    padding: 0;
+    background-color: rgb(35, 35, 35);
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.movie-container5:hover {
+    transform: scale(1.15);
+}
+
+.movie-container5,
+.movie-container14 button {
+    cursor: pointer;
+    text-transform: none;
+    overflow: visible;
+    margin: 0;
+    color: white;
+}
+
+.movie-container6 {
+    position: relative;
+    background-color: rgb(35, 35, 35);
+    border-radius: 8px;
+    width: 112px;
+    height: 156.8px;
+}
+
+/* .movie-container 6 media queries starts here*/
+@media(min-width:1920px) {
+    .movie-container6 {
+        width: 214px;
+        height: 300px;
+    }
+}
+
+@media(min-width:1280px) {
+    .movie-container6 {
+        width: 180px;
+        height: 252px;
+    }
+}
+
+@media(min-width:960px) {
+    .movie-container6 {
+        width: 140px;
+        height: 196px;
+    }
+}
+
+/* .movie-container 6 media queries ends here*/
+
+.movie-container7 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 8px;
+    z-index: 1;
+    background-color: rgb(35, 35, 35);
+    -webkit-animation: loading 4000ms infinite linear;
+    animation: loading 4000ms infinite linear;
+    animation-delay: 0ms;
+}
+
+/* .movie-container7 @keyframe loading starts here */
+@keyframes loading {
+    0% {
+        background-color: rgb(35, 35, 35);
+    }
+
+    40% {
+        background-color: rgb(35, 35, 35);
+    }
+
+    70% {
+        background-color: rgb(65, 65, 65);
+    }
+
+    90% {
+        background-color: rgb(35, 35, 35);
+    }
+}
+
+/* .movie-container7 @keyframe loading ends here */
+
+.movie-container8 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 8px;
+    z-index: 2;
+    background-size: cover;
+}
+
+.movie-container9 {
+    position: absolute;
+    left: -10px;
+    bottom: 1.6px;
+    z-index: 2;
+    font-size: 64px;
+}
+
+/* .movie-container 9 media queries starts here */
+@media (min-width:1920px) {
+    .movie-container9 {
+        font-size: 120px;
+    }
+}
+
+@media (min-width:1280px) {
+    .movie-container9 {
+        font-size: 100px;
+    }
+}
+
+@media (min-width:960px) {
+    .movie-container9 {
+        font-size: 80px;
+        bottom: 0px;
+        left: -22px;
+    }
+}
+
+/* .movie-container 9 media queries ends here*/
+
+.movie-container10 {
+    position: relative;
+    bottom: -28px;
+}
+
+.movie-container11 {
+    position: absolute;
+    height: 1px;
+    height: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+}
+
+.movie-container12 {
+    position: relative;
+    height: 120px;
+    font-weight: 700;
+    background-color: transparent;
+    display: inline-block;
+    line-height: 1;
+    text-shadow: 0 0 24px rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 4px rgb(255, 255, 255);
+}
+
+.movie-container12::before {
+    position: absolute;
+    content: attr(data-content);
+    -webkit-text-stroke: 0;
+    -webkit-text-fill-color: rgb(0, 0, 0);
+}
+
+.movie-container13 {
+    height: 100%;
+    padding-left: 12px;
+    background: rgb(0, 0, 0);
+    border: none;
+    right: 0px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    transition: transform 400ms ease-in-out;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 10px;
+
+}
+
+.movie-container13 button {
+    transition: opacity 400ms ease-in-out;
+    position: absolute;
+}
+
+.movie-container14 {
+    height: 120px;
+    width: 24px;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.movie-container14:hover {
+    background-color: rgb(77, 70, 70);
+    transform: scale(1.05);
+}
+
+.movie-container14:active {
+    background-color: red;
+    transform: scale(0.95);
+}
+
+
+/* svg code start*/
+svg:not(:root) {
+    overflow: hidden;
+}
+
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+
+svg:active {
+    color: white;
+}
+
+/* svg code end*/
+
+
+/* movies section all css code ends here */
+
+
+/* More Reasons to Join Section Code starts here  */
+
+/* Big container code starts here */
+
+.dad-container {
+    background-color: black;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* Dad container code ends here */
+
+
+/* reasons container code starts here */
+.Reason-container {
+    width: 100vw;
+    height: auto;
+    padding: 10px 0;
+}
+
+/* heading code */
+h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 7%;
+    margin-bottom: 20px;
+    font-family: "Martel Sans", sans-serif;
+}
+
+/* ✅ for Mobile - 1 column */
+
+@media (max-width: 959px) {
+    h2 {
+        font-size: 20px;
+        margin-left: 5%;
+    }
+}
+
+/* reasons container code ends here */
+
+/* This container colored-contain contain all boxes  and its code starts here*/
+.colored-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 7%;
+}
+
+/* This container colored-contain contain all boxes  and its code ends here*/
+
+/*Code  Applied on all boxes starts here */
+.boxes {
+    flex: 1 1 22%;
+    height: 300px;
+    background: linear-gradient(149deg, #192247 0%, #210e17 99.08%);
+    border-radius: 8px;
+    padding: 10px 20px;
+    background-color: #111;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.boxes:hover {
+    transform: scale(1.05);
+}
+
+/* ✅ Tablet/Desktop - 2 columns at 1280px or below */
+@media (max-width: 1280px) {
+    .boxes {
+        flex: 1 1 calc(50% - 20px);
+        /* 2 columns with gap compensation */
+    }
+}
+
+/* ✅ for Mobile - 1 column */
+
+@media (max-width: 959px) {
+    .boxes {
+        flex: 1 1 100%;
+    }
+}
+
+@media (min-width: 600px) {
+    .boxes {
+        background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    }
+}
+
+/*Code  Applied on all boxes ends here */
+
+/* code for heading in the boxes starts here */
+.boxes h3 {
+    line-height: 1.3;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Martel Sans", sans-serif;
+}
+
+.boxes h3:hover {
+    transform: scale(1.06);
+}
+
+@media (min-width: 1280px) {
+    h3 {
+
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+
+@media (min-width: 960px) {
+    h3 {
+
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+
+@media (min-width: 600px) {
+    h3 {
+
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+
+/* code for heading in the boxes ends here */
+
+/* code for paragraph in the boxes starts here */
+div p {
+    margin-left: 0px;
+    margin-top: 8px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+    padding: 5px;
+    line-height: 1.4;
+    padding-bottom: 12px;
+    font-family: "Martel Sans", sans-serif;
+}
+
+div p:hover {
+    transform: scale(1.03);
+}
+
+/* code for paragraph in the boxes ends here */
+
+/* code for svg in the boxes starts here */
+.svg-1 {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    transform: translate(36px, 36px) scale(0.88) translate(-36px, -36px);
+}
+
+.svg-1:hover {
+    transform: scale(1.05)
+}
+
+.svg-1 svg:hover {
+    transform: scale(1.15);
+}
+
+@media (min-width: 1280px) {
+    .svg-1 {
+        bottom: 12px;
+        right: 12px;
+    }
+}
+
+@media (min-width: 960px) {
+    .svg-1 {
+        bottom: 8px;
+        right: 8px;
+        transform: scale(1);
+    }
+}
+
+/* code for svg in the boxes ends here */
+
+/* More Reasons to Join Section all css Code ends here  */
+
+
+
+/* Faq Questions css code starts here */
+.dad-faq {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: black;
+    width: 90%;
+}
+
+@media(max-width:1180px) {
+    .dad-faq {
+        width: 85%;
+    }
+}
+
+.faq-container {
+    max-width: 800px;
+}
+
+/* @media(min-width:1350px){
+        .faq-container{
+           max-width:100vw ; 
+        }
+    } */
+
+.faq-box h3 {
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.ques {
+    background-color: rgb(45, 45, 45);
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 20px 60px 20px 20px;
+    position: relative;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 120%;
+    font-weight: 600;
+}
+
+.ques:hover {
+    background-color: rgb(65, 65, 65);
+    background-color: rgb(223, 10, 10);
+    font-weight: 700;
+}
+
+.ques.active {
+    background-color: rgb(65, 65, 65);
+}
+
+.ques svg {
+    position: absolute;
+    right: 20px;
+    top: 22px;
+    transition: transform 0.3s ease;
+}
+
+.ques.active svg {
+    transform: rotate(45deg);
+}
+
+.answer {
+    max-height: 0;
+    width: 120%;
+    overflow: hidden;
+    background-color: rgb(45, 45, 45);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+    transition: max-height 0.4s ease;
+    padding: 0 20px;
+    /* margin-top: 0px; */
+}
+
+.answer.open {
+    padding: 20px 25px;
+    max-height: 1200px;
+    margin-bottom: 10px;
+    margin-top: -9px;
+}
+
+.answer.open :hover {
+    transform: scale(1.03);
+
+}
+@media (max-width:320px) {
+    .answer.open{
+        padding: 10px 15px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .faq-box h3 {
+        font-size: 22px;
+    }
+
+    .ques {
+        font-size: 18px;
+        padding: 18px 50px 18px 16px;
+    }
+
+    .ques svg {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Faq Questions css code ends here */
+
+
+/* Ready all css code ends here */
+
+/* It Contain all part code  */
+.dad-email {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+/* It contains all portions code  */
+.email-portion {
+    background-color: black;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    padding-bottom: 20px;
+    height: auto;
+}
+
+/* contain Ready or h3 code starts here */
+.ready-portion {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+}
+
+.ready-portion:hover {
+    transform: scale(1.05);
+}
+
+/* contain Ready or h3 code ends here */
+
+/* contain Email Address & Get Stated code */
+.form-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Email-address code starts here */
+.sec-email {
+    flex: 1 1 250px;
+    min-width: 250px;
+    max-width: 400px;
+    padding: 16px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background: rgba(22, 22, 22, 0.7);
+    color: white;
+    border-color: rgba(128, 128, 128, 0.7);
+    border: 1px solid rgb(255, 255, 255);
+    /* outline: none; */
+}
+
+.sec-email::placeholder {
+    color: rgb(255, 255, 255);
+}
+.sec-email:hover{
+    border-radius: 6px;
+}
+.sec-email:active {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+/* Email-address code ends here */
+
+/* Get Started code starts here */
+.sec-Stared {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sec-Stared:hover {
+    background-color: #e50914;
+}
+
+@media (max-width: 600px) {
+    .sec-Stared {
+        width: 75%;
+    }
+}
+
+@media (max-width: 500px) {
+    .sec-Stared {
+        width: 90%;
+    }
+}
+
+/* Get Started code ends here */
+
+/* Ready all css code ends here */
+
+/* Footer or Last-Portion css code starts here */
+
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.last-portion {
+    background-color: black;
+    width: 80vw;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+
+.ContactUS {
+    margin-left: 35px;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    cursor: pointer;
+    text-decoration: underline;
+    font-family: "Martel Sans", sans-serif;
+}
+
+.inquery ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+@media (max-width:1280px) {
+    .inquery ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width:960px) {
+    .inquery ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:600px) {
+    .inquery ul {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.inquery ul li {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: underline;
+    list-style: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+@media (max-width:600px) {
+    .inquery ul li {
+        font-size: 12px;
+    }
+}
+
+.inquery ul li:active {
+    color: red;
+}
+
+.language button {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-top: 35px;
+    margin-left: 37px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 12px;
+    padding-left: 12px;
+    background: rgba(22, 22, 22, 0.7);
+    color: white;
+    border-radius: 4px;
+     border: 1px solid rgba(128, 128, 128, 0.7);
+    font-family: "Martel Sans", sans-serif;
+    cursor: pointer;
+}
+
+.language button:hover {
+    transform: scale(1.05);
+}
+
+.language button:active {
+    border: 2px solid white;
+}
+
+.country {
+    margin-top: 35px;
+    font-family: "Martel Sans", sans-serif;
+}
+
+.country span {
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 35px;
+    font-size: 14px;
+}
+
+.last-line {
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 25px;
+    margin-left: 35px;
+    font-family: "Martel Sans", sans-serif;
+    font-size: 13px;
+}
+
+.last-line span button {
+    color: rgb(68, 142, 244);
+    background-color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    font-family: "Martel Sans", sans-serif;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+/* Footer or Last-Portion css code Ends here */
